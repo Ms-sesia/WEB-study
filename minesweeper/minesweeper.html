@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Minesweeper</title>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            td {
+                border: 1px solid black;
+                width: 20px;
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <select id="diff">
+            <option value="">Select Difficulty</option>
+            <option value="Easy">Easy</option>
+            <option value="Normal">Normal</option>
+            <option value="Hard">Hard</option>
+        </select>
+        <button id="exec">시작</button>
+        <table id="table">
+            <thead>
+                <tr>
+                    <td>
+                        <span id="timer">0</span>
+                    </td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="container">
+            <script src="minesweeper.js"></script>
+        </div>
+    </body>
+</html>
